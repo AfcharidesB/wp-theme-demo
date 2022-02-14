@@ -39,3 +39,27 @@ function simplenews_register_menus(){
 
 add_action('after_setup_theme', 'simplenews_register_menus');
 
+// Widgets
+
+function simplenews_widgets_init($id){
+
+    register_sidebar( array(
+        'name' => 'Widget 1',
+        'id' => 'widget-1',
+        'description' => 'Widget afficheé en haut du sidebar',
+        'before_widget' => '<div class="side-widget">',
+        'afet_widget' => '</div>'
+    )  );
+
+    register_sidebar( array(
+        'name' => 'Widget 2',
+        'id' => 'widget-2',
+        'description' => 'Widget afficheé en haut du sidebar',
+        'before_widget' => '<div class="side-widget">',
+        'afet_widget' => '</div>'
+    )  );
+  
+}
+
+add_action('widgets_init', 'simplenews_widgets_init');
+
