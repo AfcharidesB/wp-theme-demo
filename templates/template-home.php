@@ -6,8 +6,6 @@
 
 */ 
 
-
-
 ?>
 
 <?php get_header();  ?>
@@ -16,7 +14,6 @@
 
 
 /*$args = array(
-
     'category_name' => 'Techno',
     'post_type' => 'post'
 );*/
